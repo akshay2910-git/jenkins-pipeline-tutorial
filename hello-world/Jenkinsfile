@@ -26,6 +26,14 @@ pipeline {
                 echo 'Run only crucial integration tests from the source code' 
             }
         }
+
+                stage('Run Integration Tests 2') {
+            steps {
+                echo 'Run only crucial integration tests 2 from the source code' 
+            }
+        }
+
+
         stage('Publish Artifacts') {
             steps {
                 echo 'Save the assemblies generated from the compilation' 
